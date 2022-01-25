@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+
+}
+button{
+    color: violet;
+}
+header{
+    background-color: blueviolet;
+    padding: 44px;
+}
+footer{
+    background-color: rgba(132, 126, 138, 0.171);
+    block-size: 1.5vw;
+    padding: 6px;
+}
+main{
+    padding:44px;
+    background-image:url('images/flower.jpg');
+    
+}
