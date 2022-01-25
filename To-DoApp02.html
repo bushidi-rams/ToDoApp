@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ToDoApp</title>
+    <meta name="author" content="Lyndon">
+    <meta name="description" content="Calculator App">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="" />
+    <style>
+        h1 {
+            text-align: center;
+
+        }
+        button{
+            color: green;
+        }
+        header{
+            background-color: blueviolet;
+            padding: 44px;
+        }
+        footer{
+            background-color: rgba(132, 126, 138, 0.171);
+            block-size: 1.5vw;
+            padding: 6px;
+        }
+        main{
+            padding:44px;
+            background-image:url('images/flower.jpg');
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1 text-align:center>TO DO LIST</h1>
+        <input type="text" id="inputA"placeholder="insert task"> 
+        <input type="text" id="inputB"placeholder="insert due date"> 
+        <input type="submit" onclick="adding()"id=" input1B"value="Create">
+
+        <button onclick="Display()" >Display task list</button>
+        <button onclick="ClearItem()" >Clear Item</button>
+        <br><br>
+        <input type="text" id="input2" placeholder="Specify which item you wish to delete from 1 to...">
+        <button onclick="deleteItem('input2.value')">Delete Item</button> 
+        <br><br>
+        <input type=" text" id="input4"placeholder="enter index">
+        <input type=" text" id="input3" placeholder="enter the new task">
+        <button onclick="editItem(input4.value)" >Edit task</button> 
+        <br><br>
+        
+        <button id="input5"onclick="sortItem()">Sort List</button> 
+        <br><br>
+        <input type=" text" id="input6" placeholder="date format year-mm-day">
+        <input type="submit" onclick="AddingDate()">
+        <br><br>
+         <p id="ramsp"></p>
+         <!-- Entry point for creating items in DOM -->
+         <ul id="taskList">  
+            <li class="activeTask task"> 
+                <span>Task</span> - 
+                <span>Date</span> -
+                <span>Completion</span> -
+                
+            </li> 
+        </ul>
+        <ul id="entry">
+
+        </ul>
+    </main>
+    <footer></footer>
+    <script src="To-DoApp.js"></script>
+   
+
+</body>
+
+</html>
