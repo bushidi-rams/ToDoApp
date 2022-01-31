@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+
+}
+button{
+    color: violet;
+    
+}
+button:hover{
+    background-color:rgb(255, 0, 0);
+  }
+
+
+header{
+    background-color: blueviolet;
+    padding: 44px;
+}
+footer{
+    background-color: rgba(132, 126, 138, 0.171);
+    block-size: 1.5vw;
+    padding: 6px;
+}
+main{
+    padding:44px;
+    background-color: yellowgreen;
+    text-decoration-color: royalblue;
+    color: white;
+    
+    
+}
